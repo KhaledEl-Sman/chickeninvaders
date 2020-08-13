@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Chicken Invaders</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="author" content="El-Sman">
+    <meta name="description" content="This website was developed by El-Sman">
+    <meta name="keywords" content="Chicken Invaders, Games ,Entertainment">
+
+    <link href="./image/chicken-icon.png" rel="icon">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <audio id="bulletSound">
+        <source src="audio/bullet.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="killed">
+        <source src="audio/Killed.MP3" type="audio/mp3" />
+    </audio>
+    <audio id="gameOver">
+        <source src="audio/GameOver.MP3" type="audio/mp3" />
+    </audio>
+    <audio id="tada">
+        <source src="audio/Tada.MP3" type="audio/mp3" />
+    </audio>
+    <div class="d-flex align-items-center justify-content-center py-2 fixed-top bg-white">Your score is :<strong
+            id="score" class="ml-1 text-dark"> 0</strong></div>
+    <div id="chickens" class="w-100 h-100"></div>
+    <div id="ship"><img class="w-100" src="image/SpaceShip.png"></div>
+    <div id="bullets" class="w-100 h-100"></div>
+    <a class="btn btn-dark restart d-none text-light" id="restart">GAME OVER</a>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

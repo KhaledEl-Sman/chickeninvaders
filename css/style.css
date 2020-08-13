@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../image/Back.jpg);
+    background-size: cover;
+    background-position: center center;
+    cursor: none;
+    overflow: hidden;
+}
+
+#ship {
+    position: absolute;
+    width: 6.25rem;
+    top: 550;
+    left: 641;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+#bullets {
+    position: absolute;
+}
+
+.bullet {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: -1;
+}
+
+#chickens {
+    position: absolute;
+}
+
+.chicken {
+    width: 110px;
+    position: absolute;
+}
+
+.restart {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 3;
+    width: 100%;
+    color: #fff;
+}
